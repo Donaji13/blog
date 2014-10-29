@@ -22,7 +22,7 @@ if ($connection->connect_error){
   		$query = $connection->query("CREATE DATABASE $database"); 
   	
   		if ($query) {
-  			echo "Successfully created database";
+  			echo "Successfully created database"; $database;
   		}
 
   	}
