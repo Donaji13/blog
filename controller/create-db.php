@@ -18,7 +18,7 @@ if ($connection->connect_error){
 
   	$exists = $connection->select_db($database);//telling the database it exist on the mysquli
 
-    if(!$exists) { 
+    if(!$exists) { //! inverts from false to true
   		$query = $connection->query("CREATE DATABASE $database"); 
   	
   		if ($query) {
@@ -26,7 +26,11 @@ if ($connection->connect_error){
   		}
 
   	}
-//! inverts from false to true
+
+  	else{
+  		echo "Database already exist.";
+  	}
+
 
 
 $connection->close();
