@@ -2,14 +2,14 @@ body{
 	background-color: maroon;
 	color: white;
 }
-@media (min-width: 320px){ /*For the i phone*/
+@media (max-width: 320px){ /*For the i phone*/
 	body{
 		background-color: red;
 	}
 }
 
 
-@media (max-width:1024px){ /*For the i pad*/
+@media (min-width:1024px){ /*For the i pad*/
  	body{
  		background-color: green;
  	}
