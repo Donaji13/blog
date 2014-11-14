@@ -1,6 +1,6 @@
 <?php
 
-	require_once(__DIR__ . "/../model/database.php"); //requiring this file 
+	require_once(__DIR__ . "/../model/config.php"); //requiring this file 
 
 	$connection = new mysqli($host, $username, $password, $database); //telling the connection that these exist
 
